@@ -1,0 +1,1 @@
+export default (str, length = 10) => str.length >= length ? `${str?.slice(0, length)}...` : str
