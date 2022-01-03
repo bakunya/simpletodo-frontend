@@ -43,7 +43,7 @@ function App() {
           <button className="w-[20%] bg-[#2d4358] rounded text-[#7dd3fc] p-[10px] disabled:cursor-not-allowed" disabled={!text || loading} onClick={saveTodo}>Save!</button>
         </section>
         {
-          data?.length && <h1 className="text-center text-[#7acff7] text-2xl font-bold mt-[40px]">Your Todos</h1>
+          data?.length ? <h1 className="text-center text-[#7acff7] text-2xl font-bold mt-[40px]">Your Todos</h1> : <></>
         }
         <section className="flex flex-col bg-[#1e293b] mt-[20px]">
           {
